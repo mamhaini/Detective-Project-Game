@@ -23,9 +23,9 @@ public class RollerBall : MonoBehaviour
         horizontalInput = Input.GetAxis("Horizontal");
         forwardInput = Input.GetAxis("Vertical");
 
-        // Move the vehicle foward
+        // Move the player foward
         transform.Translate(Vector3.forward * Time.deltaTime * speed * forwardInput);
-        // Turn the vehicle
+        // Turn the player
         transform.Rotate(Vector3.up, Time.deltaTime * turnSpeed * horizontalInput);
     }
 }

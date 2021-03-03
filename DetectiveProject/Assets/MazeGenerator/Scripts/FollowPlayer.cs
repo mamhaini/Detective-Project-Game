@@ -5,16 +5,17 @@ using UnityEngine;
 
 public class FollowPlayer : MonoBehaviour
 {
-   
     
     public GameObject ViewCamera = null;
     public AudioClip CoinSound = null;
 
+  
     private Rigidbody mRigidBody = null;
     private AudioSource mAudioSource = null;
-
-    // public GameObject player;
-    // private Vector3 offset = new Vector3(0, 7, -13);
+    private const double V = 1.57;
+    private const double C = 3.31;
+    private float CameraUp = (float)V;
+    private float CameraBack = (float)C;
 
     // Start is called before the first frame update
     void Start()
@@ -27,18 +28,13 @@ public class FollowPlayer : MonoBehaviour
     {
         if (ViewCamera != null)
         {
-            Vector3 direction = (Vector3.up * 2 + Vector3.back) * 2;
-            RaycastHit hit;
-            Debug.DrawLine(transform.position, transform.position + direction, Color.red);
-            if (Physics.Linecast(transform.position, transform.position + direction, out hit))
+            Vector3 direction = (Vector3.up * CameraUp + Vector3.back) * CameraBack;
             {
-                ViewCamera.transform.position = hit.point;
-            }
-            else
-            {
+ 
                 ViewCamera.transform.position = transform.position + direction;
+       
             }
-            ViewCamera.transform.LookAt(transform.position);
+                 ViewCamera.transform.LookAt(transform.position);
         }
     }
     // Sound gets played when player picks up a coin
@@ -57,8 +53,6 @@ public class FollowPlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // Offset the camera behind the player 
-        
-        // transform.position = player.transform.position + offset;
+         
     }
 }
