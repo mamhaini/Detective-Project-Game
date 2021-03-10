@@ -209,7 +209,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 466800, guid: 6414ea9cfa2ccc24a95c775ffa926968, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.696
+      value: 0.33
       objectReference: {fileID: 0}
     - target: {fileID: 466800, guid: 6414ea9cfa2ccc24a95c775ffa926968, type: 3}
       propertyPath: m_LocalPosition.z
@@ -247,6 +247,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9556666, guid: 6414ea9cfa2ccc24a95c775ffa926968, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 9556666, guid: 6414ea9cfa2ccc24a95c775ffa926968, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 54647344348033270, guid: 6414ea9cfa2ccc24a95c775ffa926968,
         type: 3}
       propertyPath: m_UseGravity
@@ -255,7 +263,7 @@ PrefabInstance:
     - target: {fileID: 54647344348033270, guid: 6414ea9cfa2ccc24a95c775ffa926968,
         type: 3}
       propertyPath: m_Constraints
-      value: 46
+      value: 112
       objectReference: {fileID: 0}
     - target: {fileID: 54647344348033270, guid: 6414ea9cfa2ccc24a95c775ffa926968,
         type: 3}
@@ -265,12 +273,12 @@ PrefabInstance:
     - target: {fileID: 65330918969136124, guid: 6414ea9cfa2ccc24a95c775ffa926968,
         type: 3}
       propertyPath: m_Size.y
-      value: 1.5927389
+      value: 1.4899967
       objectReference: {fileID: 0}
     - target: {fileID: 65330918969136124, guid: 6414ea9cfa2ccc24a95c775ffa926968,
         type: 3}
       propertyPath: m_Center.y
-      value: 0.82152855
+      value: 0.87289965
       objectReference: {fileID: 0}
     - target: {fileID: 65330918969136124, guid: 6414ea9cfa2ccc24a95c775ffa926968,
         type: 3}
@@ -465,6 +473,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 114deb312989ff54fb88ae61480aba4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerSpeed: 5
 --- !u!82 &1340843380
 AudioSource:
   m_ObjectHideFlags: 0
@@ -797,7 +806,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 0, g: 1, b: 0.89888954, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -815,7 +824,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Use WASD or arrows to move the character.
+  m_Text: ' Weclome to Detective Simulator
+
+    Use WASD or arrows to move the character.
 
     Collect coins!'
 --- !u!222 &1988816027
