@@ -255,6 +255,10 @@ PrefabInstance:
       propertyPath: m_ApplyRootMotion
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 9556666, guid: 6414ea9cfa2ccc24a95c775ffa926968, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 54647344348033270, guid: 6414ea9cfa2ccc24a95c775ffa926968,
         type: 3}
       propertyPath: m_UseGravity
@@ -273,34 +277,41 @@ PrefabInstance:
     - target: {fileID: 65330918969136124, guid: 6414ea9cfa2ccc24a95c775ffa926968,
         type: 3}
       propertyPath: m_Size.y
-      value: 1.4899967
+      value: 1.5450675
       objectReference: {fileID: 0}
     - target: {fileID: 65330918969136124, guid: 6414ea9cfa2ccc24a95c775ffa926968,
         type: 3}
       propertyPath: m_Center.y
-      value: 0.87289965
+      value: 0.8453642
       objectReference: {fileID: 0}
     - target: {fileID: 65330918969136124, guid: 6414ea9cfa2ccc24a95c775ffa926968,
         type: 3}
       propertyPath: m_Size.z
-      value: 0.40386707
+      value: 0.43780193
       objectReference: {fileID: 0}
     - target: {fileID: 65330918969136124, guid: 6414ea9cfa2ccc24a95c775ffa926968,
         type: 3}
       propertyPath: m_Center.z
-      value: 0.036654145
+      value: 0.019686714
       objectReference: {fileID: 0}
     - target: {fileID: 65330918969136124, guid: 6414ea9cfa2ccc24a95c775ffa926968,
         type: 3}
       propertyPath: m_Size.x
-      value: 0.67081934
+      value: 0.72316
       objectReference: {fileID: 0}
     - target: {fileID: 65330918969136124, guid: 6414ea9cfa2ccc24a95c775ffa926968,
         type: 3}
       propertyPath: m_Center.x
-      value: -0.037926704
+      value: -0.0117563605
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 65330918969136124, guid: 6414ea9cfa2ccc24a95c775ffa926968,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 54647344348033270, guid: 6414ea9cfa2ccc24a95c775ffa926968, type: 3}
+    - {fileID: 65330918969136124, guid: 6414ea9cfa2ccc24a95c775ffa926968, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 6414ea9cfa2ccc24a95c775ffa926968, type: 3}
 --- !u!115 &796481730
 MonoScript:
@@ -354,6 +365,10 @@ PrefabInstance:
     - target: {fileID: 493056, guid: 3549f273ff63f754eb749081e517a9fa, type: 2}
       propertyPath: m_RootOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8101472, guid: 3549f273ff63f754eb749081e517a9fa, type: 2}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
@@ -493,7 +508,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0.693
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -591,6 +606,7 @@ GameObject:
   - component: {fileID: 1346720325}
   - component: {fileID: 1346720324}
   - component: {fileID: 1346720323}
+  - component: {fileID: 1346720328}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -683,6 +699,102 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1346720328
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1346720322}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: b73fe49479410f4409679af13d56b0fa, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1895491377
 GameObject:
   m_ObjectHideFlags: 0
@@ -832,11 +944,13 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: ' Weclome to Detective Simulator
+  m_Text: ' Weclome to Detective Simulator.
 
-    Use WASD or arrows to move the character.
+    Use WASD or Arrow keys  to move the character.
 
-    Collect coins!'
+    Make your way around the maze and collect the coins!
+
+    dwdwd'
 --- !u!222 &1988816027
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -854,7 +968,7 @@ RectTransform:
   m_GameObject: {fileID: 1988816025}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1.2879}
   m_Children: []
   m_Father: {fileID: 1895491378}
   m_RootOrder: 0

@@ -8,8 +8,10 @@ public class PlayerMovement : MonoBehaviour
     public Animator anim;
     public float playerSpeed = 5.0f;
 
+
     private CharacterController controller;
     private Vector3 playerVelocity;
+
    
 
 
@@ -17,8 +19,9 @@ public class PlayerMovement : MonoBehaviour
     {
         // Character Controller
         controller = gameObject.AddComponent<CharacterController>();
-        controller.height = 0.1f;
-        controller.radius = 0.1f;
+        controller.height = 1.48f;
+        controller.radius = 0.3f;
+        controller.center = new Vector3(0, (float)0.8, 0);
         // Animator reference
         anim = GetComponent<Animator>();
     }
