@@ -65,6 +65,7 @@
   <ItemGroup>
     <Compile Include="Assets\MazeGenerator\Scripts\BasicMazeGenerator.cs" />
     <Compile Include="Assets\MazeGenerator\Scripts\CanvasText.cs" />
+    <Compile Include="Assets\MazeGenerator\Scripts\CollectCoin.cs" />
     <Compile Include="Assets\MazeGenerator\Scripts\DivisionMazeGenerator.cs" />
     <Compile Include="Assets\MazeGenerator\Scripts\FollowPlayer.cs" />
     <Compile Include="Assets\MazeGenerator\Scripts\MainMenu.cs" />
@@ -75,6 +76,7 @@
     <Compile Include="Assets\MazeGenerator\Scripts\RandomTreeMazeGenerator.cs" />
     <Compile Include="Assets\MazeGenerator\Scripts\RecursiveMazeGenerator.cs" />
     <Compile Include="Assets\MazeGenerator\Scripts\RecursiveTreeMazeGenerator.cs" />
+    <Compile Include="Assets\MazeGenerator\Scripts\ScoringSystem.cs" />
     <Compile Include="Assets\MazeGenerator\Scripts\TreeMazeGenerator.cs" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
