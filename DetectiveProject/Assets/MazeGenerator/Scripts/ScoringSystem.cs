@@ -8,6 +8,7 @@ public class ScoringSystem : MonoBehaviour
     public GameObject scoreText;
     public static int theScore;
 
+    // Changes score text
     void Update()
     {
         scoreText.GetComponent<Text>().text = "SCORE: " + theScore;
