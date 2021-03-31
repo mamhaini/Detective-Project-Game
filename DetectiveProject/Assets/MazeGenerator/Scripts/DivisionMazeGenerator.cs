@@ -28,6 +28,7 @@ public class DivisionMazeGenerator : BasicMazeGenerator {
 
 	private System.Collections.Generic.Queue<IntRect> rectsToDivide = new System.Collections.Generic.Queue<IntRect> ();
 
+	// Generates Maze
 	public override void GenerateMaze(){
 		for (int row = 0; row < RowCount; row++) {
 			GetMazeCell(row,0).WallLeft = true;

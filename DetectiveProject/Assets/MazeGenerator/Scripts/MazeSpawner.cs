@@ -13,6 +13,8 @@ public class MazeSpawner : MonoBehaviour {
 		RecursiveDivision,
 	}
 
+	// Game Object that can be spawned 
+
 	public MazeGenerationAlgorithm Algorithm = MazeGenerationAlgorithm.PureRecursive;
 	public bool FullRandom = false;
 	public int RandomSeed = 12345;
@@ -28,6 +30,7 @@ public class MazeSpawner : MonoBehaviour {
 
 	private BasicMazeGenerator mMazeGenerator = null;
 
+	// Spawns maze upon start
 	void Start () {
 		if (!FullRandom) {
 			Random.seed = RandomSeed;
